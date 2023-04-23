@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+.main {
+    max-width: 1440px;
+    display: block;
+    margin: 0 auto;
+}
+.myfamily {
+    color: rgb(240, 228, 183);
+    font-weight:bold;
+    font-size: 35px;
+    -webkit-text-stroke: 1px;
+    text-align: center;
+    margin-top: 50px;
+    text-shadow: 2px 1px 1px black;
+}
+
+.myfamily::before,
+.myfamily::after {
+    content: '';
+    height: 2px;
+    width: 200px;
+    background: rgb(252, 185, 0);
+    margin: 0 auto 10px ;
+    display: block;
+    transition: 1s;
+}
+
+.myfamily:hover::before,
+.myfamily:hover::after {
+    height: 2px;
+    width: 300px;
+    transition: ease-out 1s;
+}
+
+.img {
+    border-radius: 20px;
+    height: 180px;
+    width: 150px;
+    margin-bottom: 80px;
+    float: left;
+}
+
+body {
+    background: url(images/fon.png);
+    background-size: cover;
+}
+
+.title {
+    font-size: 25px;
+    font-weight:900 ;
+    background-color: cornsilk;
+    padding: 10px;
+    margin-right: 1200px;
+    margin-bottom: 40px;
+    margin-left: 170px;
+    border : 3px solid rgb(52, 184, 184);
+    border-radius: 20px ;
+    transition: all 2s;
+}
+
+.title:hover {
+    border-color: blueviolet;
+    transform: rotate(360deg);
+    transition: all 2s;
+}
+
+.subtitle {
+    margin-left: 170px ;
+    margin-top: 10px ;
+    font-weight: 800 ;
+    font-size: 20px ;
+    color: rgba(255, 207, 168, 0.952) ;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0) ;
+}
+
+.card {
+    display: flex;
+}
+
+.info {
+    margin-top: 35px;
+    background: rgb(109, 175, 250) ;
+    border: rgb(38, 77, 252) solid ;
+    border-radius: 15px ;
+    border-width: 3px ;
+    padding: 10px ;
+    font-size: 20px ;
+    margin-bottom: 20px ;
+    color: rgb(255, 251, 217) ;
+    text-shadow: 0px 1px 1px rgb(0, 0, 0) ;
+}
+#chmo {
+    margin-top: 53px;
+}
